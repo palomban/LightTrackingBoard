@@ -12,7 +12,7 @@ Is this code helpful to you? At the very least, it should be a good example for 
 
 ## Overview
 
-Arduino Uno code that tracks a light source via a proportional-integral-derivative (PID) closed loop control system.
+Arduino Uno code that tracks a light source by implementing a proportional-integral-derivative (PID) closed loop control system.
 
 ## Required Operating Environment
 *Circuit Diagram Coming Soon*
