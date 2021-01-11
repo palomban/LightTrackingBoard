@@ -8,7 +8,9 @@ Newsletter: [Sign Up for the Newsletter here!](https://www.thenicholaspalomba.co
 
 Is this code helpful to you? At the very least, it should be a good example for projects you are working on. If so, please considering donating, so I can continue to provide this and similar code to you and the open source community for free!
 
-[Show Your Support](https://checkout.square.site/merchant/JFF17AN4T61GH/checkout/V54WF2SZKRIPSZIHCDL2SCQA) or Venmo *@npalomb*
+[Show Your Support](https://checkout.square.site/merchant/JFF17AN4T61GH/checkout/V54WF2SZKRIPSZIHCDL2SCQA) or Venmo *@npalomb* Using the QR Code Below
+
+<img src="https://i.ibb.co/qssSHwV/Venmo-QRCode.png" width="200">
 
 ## Overview
 
