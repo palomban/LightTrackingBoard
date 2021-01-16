@@ -2,9 +2,9 @@
 // Copyright 2021 Nicholas F. Palomba
 // https://www.thenicholaspalomba.com/
 // Published on 1/4/2021
-// This Arduino Uno code tracks a light source via a proportional-integral-derivative (PID) closed loop control system
+// This Arduino Uno code tracks a light source by implementing a proportional-integral-derivative (PID) closed loop control system
 // The position of the light source is measured and this error signal is processed by the PID algortihm such that
-// the output signal to the servo motor can accurately follow the light source with minimul overshoot, rise time, and steady-state error.
+// the output signal to the servo motor can accurately follow the light source with minimal overshoot, rise time, and steady-state error.
 // Refer to README.md for the required operating environment
 
 #include <Servo.h>
@@ -27,13 +27,13 @@ long past_time; // Value indicating last discrete PID output
 long current_time; // Value indicating current discrete PID output
 long elapsed_time; // Value indicating time between the last PID output and current PID output
 
+// Define Global Constants
+double initial_pos = 90; // Initial position to move to after start up
+
 // Define Global PID Gain Terms (Tuning may be required)
 double kP = 0.5;
 double kI = 0.001;
 double kD = 1.3;
-
-// Define Global Constants
-double initial_pos = 90; // Initial position to move to after start up
 
 // Define Arduino Pin I/O
 int const servoPin = 11; // Servo signal pin
@@ -86,6 +86,7 @@ void loop() {
     Serial.print(mov);
     Serial.print('\t'); 
     pos = last_pos + mov;
+    // Servo Boundary Control
     if (pos < 0) {
       pos = 0;
       if (last_pos == pos){
