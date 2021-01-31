@@ -1,11 +1,13 @@
 // LightTrackingBoard.ino
-// Copyright 2021 Nicholas F. Palomba
 // https://www.thenicholaspalomba.com/
+// Copyright 2021 Nicholas F. Palomba
+// This software is available for free via the associated LICENSE file at https://www.thenicholaspalomba.com/
 // Published on 1/4/2021
-// This Arduino Uno code tracks a light source by implementing a proportional-integral-derivative (PID) closed loop control system
-// The position of the light source is measured and this error signal is processed by the PID algortihm such that
-// the output signal to the servo motor can accurately follow the light source with minimal overshoot, rise time, and steady-state error.
-// Refer to README.md for the required operating environment
+// This Arduino Uno code tracks a light source by implementing a proportional-integral-derivative (PID) closed loop control system.
+// The position of the light source is measured and this error signal is processed by the PID algortihm such that the output
+// signal to the servo motor can accurately follow the light source with minimal overshoot, rise time, and steady-state error.
+// Refer to the associated README file for any disclaimers at https://www.thenicholaspalomba.com/
+// Refer to the associated README file for information regarding the required operating environment at https://www.thenicholaspalomba.com/
 
 #include <Servo.h>
 
